@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+
+body, html{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body { 
+    background-image: url(grzybson.jpg!sw800.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+#header{
+    width:100%;
+    height:10vh;
+    background-color: darkolivegreen;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin:0;
+}
+
+#title{
+    margin-left:50px;
+    height:100%;
+    color:white;
+}
+#userScore{
+    height:100%;
+    margin-right:50px;
+}
+#logout{
+    height:100%;
+    margin-right:50px;
+}
+a{
+    text-decoration: none;
+}
+
+#container{
+    margin:0 auto;
+    width:500px;
+    height:70vh;
+    margin-top: 50px;
+}
+#container > img{
+    width:500px;
+    height:65vh;
+    border-radius: 25px;
+    border:4px solid black;
+}
+input[type='text']{
+    height:35px;
+    width:350px;
+    margin-left:40px;
+    border-radius: 25px;
+    border:none;
+}
+input[type='submit']{
+    height:40px;
+    width:40px;
+    border-radius: 25px;
+    border:none;
+    cursor:pointer;
+}
+.good{
+    color:#14fc81;
+}
+  
+.bad{
+    color:red;
+}
+
+.none{
+    color:black;
+}

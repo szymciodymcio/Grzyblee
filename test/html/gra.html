@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grzyble</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="header">
+        <div id="title"><h1>Grzyble</h1></div>
+        <div id="userScore" class="none"><h1>{{nazwa}}{{odp}}</h1></div>
+        <div id="logout"><h1><a href='/'>Wyloguj!</a></h1></div>
+    </div>
+    <div id="container">
+        <img src="{{link}}" style="filter: blur('{{bluramount}}'px) ;"/>
+        <form method="post" action="{{gamemode}}">
+            <input type="text" name="nazwaGrzyba" id="nazwaGrzyba">
+            <input type="submit" value="->">
+        </form>
+    </div>
+</body>
+</html>
