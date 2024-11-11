@@ -340,7 +340,7 @@ app.post("/medium", (req,res) =>{
           res.cookie("grzybname", ell['nazwa'].toString());
           page = page.replace("{{link}}", "zdjecia_grzybow/"+ell['img']);
           page = page.replace("'{{bluramount}}'", req.cookies.blur);
-          page = page.replace("{{gamemode}}", "/easy")
+          page = page.replace("{{gamemode}}", "/medium")
           res.send(page);
         });
       });
@@ -394,7 +394,7 @@ app.post("/hard", (req,res) =>{
           res.cookie("grzybname", ell['nazwa'].toString());
           page = page.replace("{{link}}", "zdjecia_grzybow/"+ell['img']);
           page = page.replace("'{{bluramount}}'", req.cookies.blur);
-          page = page.replace("{{gamemode}}", "/easy")
+          page = page.replace("{{gamemode}}", "/hard")
           res.send(page);
         });
       });
